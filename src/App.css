@@ -1,0 +1,22 @@
+.custom-bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(to left, #00000093, #00000080);
+}
+
+.text-animation-up {
+  animation: text-insert .35s linear 1 forwards;
+}
+
+@keyframes text-insert {
+  from {
+    opacity: .3;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px)
+  }
+}
