@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Neem Tree",
+        "imageTree": "https://cdn.pixabay.com/photo/2022/05/10/11/12/tree-7186835_1280.jpg",
+        "imagePlant": "https://media.istockphoto.com/id/1792066939/photo/neem-tree-leaves.jpg?s=2048x2048&w=is&k=20&c=fWQX1fwXNJi0G3NIJcFUTbCDfbLRQkY7UIrJCcafTnQ=",
+        "treeFamily": "Meliaceae",
+        "rating": 4.8,
+        "boughts": 1200,
+        "amount": 799,
+        "discount": 15,
+        "age": "TREE",
+        "about": "The Neem tree is renowned for its medicinal properties. It purifies air, repels insects, and is integral to traditional medicine. Its leaves, bark, and seeds offer benefits for skin, immunity, and dental care."
+    },
+    {
+        "name": "Banyan Tree",
+        "imageTree": "https://as1.ftcdn.net/v2/jpg/02/12/69/88/1000_F_212698839_bWzVsqRaXsi5kfowZdjsaxKD2hg2g3w7.jpg",
+        "imagePlant": "https://as1.ftcdn.net/v2/jpg/02/12/69/88/1000_F_212698839_bWzVsqRaXsi5kfowZdjsaxKD2hg2g3w7.jpg",
+        "treeFamily": "Moraceae",
+        "rating": 4.9,
+        "boughts": 800,
+        "amount": 1199,
+        "discount": 10,
+        "age": "TREE",
+        "about": "The Banyan tree symbolizes immortality in many cultures. It provides excellent shade, supports biodiversity, and helps prevent soil erosion. A majestic tree often seen in villages and temple areas."
+    },
+    {
+        "name": "Tulsi Plant (Holy Basil)",
+        "imageTree": "https://cdn.pixabay.com/photo/2021/02/23/10/12/leaves-6042983_1280.jpg",
+        "imagePlant": "https://cdn.pixabay.com/photo/2018/06/21/15/49/tulsi-plant-3483174_1280.jpg",
+        "treeFamily": "Lamiaceae",
+        "rating": 4.7,
+        "boughts": 2000,
+        "amount": 299,
+        "discount": 25,
+        "age": "PLANT",
+        "about": "Tulsi is a sacred plant in Indian culture, known for its healing properties. It improves immunity, reduces stress, purifies air, and is widely used in teas and herbal remedies."
+    },
+    {
+        "name": "Basil Seeds",
+        "imageTree": "https://media.istockphoto.com/id/923382924/photo/sweet-basil-ocimum-basilicum-seeds-in-a-glass-bowl-with-and-antique-spoon.jpg?s=2048x2048&w=is&k=20&c=bJuY_XA-SMugMqkvLxmLlKEkBTmsw694STS8dmiDVbU=",
+        "imagePlant": "https://media.istockphoto.com/id/1090158276/photo/close-up-high-angle-view-of-full-grown-basil-planted-in-a-pot.jpg?s=2048x2048&w=is&k=20&c=bi83YX7aCS74hyjwUvjxY9jW_rKYdXmI4yu2uHmLin0=",
+        "treeFamily": "Lamiaceae",
+        "rating": 4.8,
+        "boughts": 1800,
+        "amount": 129,
+        "discount": 25,
+        "age": "PLANT",
+        "about": "Basil seeds grow into aromatic plants loved for their flavor and medicinal value. Great for indoor growing and boosting immunity, digestion, and freshness."
+    },
+    {
+        "name": "Sunflower Seeds",
+        "imageTree": "https://cdn.pixabay.com/photo/2020/09/22/16/11/sunflower-seeds-5593546_1280.jpg",
+        "imagePlant": "https://cdn.pixabay.com/photo/2021/04/27/18/54/sunflower-6212201_1280.jpg",
+        "treeFamily": "Asteraceae",
+        "rating": 4.6,
+        "boughts": 950,
+        "amount": 149,
+        "discount": 20,
+        "age": "PLANT",
+        "about": "Sunflower seeds yield bright, sunny blooms and are also a healthy snack! The plant attracts pollinators, enhances garden appeal, and is very easy to grow."
+    }
+]
