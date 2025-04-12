@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Basil Seeds",
+        "imageTree": "https://cdn.pixabay.com/photo/2020/04/23/14/28/basil-plant-5082886_1280.jpg",
+        "imagePlant": "https://cdn.pixabay.com/photo/2022/06/27/16/01/basil-7287699_1280.jpg",
+        "treeFamily": "Lamiaceae",
+        "rating": 4.8,
+        "boughts": 1800,
+        "amount": 129,
+        "discount": 25,
+        "age": "PLANT",
+        "about": "Basil seeds grow into aromatic plants loved for their flavor and medicinal value. Great for indoor growing and boosting immunity, digestion, and freshness."
+    },
+    {
+        "name": "Sunflower Seeds",
+        "imageTree": "https://cdn.pixabay.com/photo/2021/07/20/18/01/sunflower-6480872_1280.jpg",
+        "imagePlant": "https://cdn.pixabay.com/photo/2018/09/21/10/55/sunflower-3692764_1280.jpg",
+        "treeFamily": "Asteraceae",
+        "rating": 4.6,
+        "boughts": 950,
+        "amount": 149,
+        "discount": 20,
+        "age": "PLANT",
+        "about": "Sunflower seeds yield bright, sunny blooms and are also a healthy snack! The plant attracts pollinators, enhances garden appeal, and is very easy to grow."
+    },
+    {
+        "name": "Neem Seeds",
+        "imageTree": "https://cdn.pixabay.com/photo/2020/08/11/06/18/neem-tree-5479561_1280.jpg",
+        "imagePlant": "https://cdn.pixabay.com/photo/2019/08/11/14/10/neem-4398778_1280.jpg",
+        "treeFamily": "Meliaceae",
+        "rating": 4.9,
+        "boughts": 1250,
+        "amount": 199,
+        "discount": 30,
+        "age": "TREE",
+        "about": "Neem seeds grow into medicinal giants known for purifying air and soil. The tree fights bacteria, pests, and viruses naturally—an eco-warrior’s dream."
+    },
+    {
+        "name": "Coriander Seeds",
+        "imageTree": "https://cdn.pixabay.com/photo/2018/09/06/17/06/coriander-3658421_1280.jpg",
+        "imagePlant": "https://cdn.pixabay.com/photo/2018/04/08/23/58/coriander-3301845_1280.jpg",
+        "treeFamily": "Apiaceae",
+        "rating": 4.5,
+        "boughts": 1400,
+        "amount": 99,
+        "discount": 10,
+        "age": "PLANT",
+        "about": "Coriander seeds are used for their spice and to grow fragrant, tasty leaves. An excellent kitchen companion with cooling effects and rich antioxidants."
+    },
+    {
+        "name": "Tulsi Seeds (Holy Basil)",
+        "imageTree": "https://cdn.pixabay.com/photo/2022/01/02/12/38/holy-basil-6907965_1280.jpg",
+        "imagePlant": "https://cdn.pixabay.com/photo/2018/09/26/23/14/holy-basil-3706369_1280.jpg",
+        "treeFamily": "Lamiaceae",
+        "rating": 5,
+        "boughts": 3000,
+        "amount": 119,
+        "discount": 40,
+        "age": "PLANT",
+        "about": "Tulsi is a sacred and medicinal plant revered in Ayurveda. Grows fast, repels insects, purifies air, and promotes respiratory and mental health."
+    }
+]
