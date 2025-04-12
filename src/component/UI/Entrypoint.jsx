@@ -12,9 +12,9 @@ const Entrypoint = () => {
                 className="h-full py-10 lg:px-20 sm:px-10 px-2 custom-bg text-[white] rounded-xl flex flex-col justify-between items-center"
                 style={{ backgroundImage: `linear-gradient(to bottom,#00000080,#00000060) ,url(${backgroundImage})` }}
             >
-                <h1 className="text-[clamp(1.2rem,3vw,5rem)] mt-10 self-end text-animation-up">Plants-Care Products & Plants</h1>
+                <h1 className="text-[clamp(1.5rem,3.5vw,5rem)] mt-10 self-end text-animation-up">Plants-Care Products & Plants</h1>
 
-                <p className="text-[clamp(.81rem,1.2vw,5rem)] text-animation-up">Nature gives you the confidence you deserve</p>
+                <p className="text-[clamp(.9rem,1.2vw,2rem)] text-animation-up">Nature gives you the confidence you deserve</p>
 
                 <div className="flex flex-col justify-center gap-1">
                     <button className="bg-indigo-800 rounded-xl py-1" onClick={() => navigate('/products')}>Let's Get Started</button>

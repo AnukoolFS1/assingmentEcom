@@ -1,8 +1,10 @@
+import Header from "./Header"
+
 const Dashboard = () => {
 
     return (
-        <section>
-            
+        <section className="p-7">
+            <Header />
         </section>
     )
 }

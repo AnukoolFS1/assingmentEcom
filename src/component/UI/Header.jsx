@@ -1,0 +1,29 @@
+import { useState } from "react"
+import Input from "../Elements/Input"
+
+const Header = () => {
+    const [searchValue, setSearchValue] = useState("");
+
+    const getValue = (value) => {
+        setSearchValue(value)
+    }
+
+    return (
+        <header className="font-semibold">
+            <h2 className="text-[clamp(20px,2vw,50px)]">
+                Welcome back, User
+            </h2>
+            <div>
+                <Input
+                    type={"search"}
+                    value={searchValue}
+                    placeholder={"search"}
+                    getValue={getValue}
+                />
+
+            </div>
+        </header>
+    )
+}
+
+export default Header
