@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { Provider } from "react-redux"
+import Entrypoint from "./component/Entrypoint"
 
 function App() {
 
@@ -7,7 +8,7 @@ function App() {
     <Provider>
       <Router>
         <Routes>
-          <Route />
+          <Route path="/" element={<Entrypoint />} />
         </Routes>
       </Router>
     </Provider>
