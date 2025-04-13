@@ -1,11 +1,16 @@
+// library
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+// icons
 import { BiHeart } from "react-icons/bi";
 import { FaStar } from "react-icons/fa6";
 import { IoIosAddCircle } from "react-icons/io";
-import { useSelector } from "react-redux";
+// self module
 import priceInCurrency from "../../app/currency";
 
 
-const Product = ({ name, image1, family, rating, amount }) => {
+const Product = ({ name, image1, family, rating, amount, id }) => {
+    const navigate = useNavigate()
     const currency = useSelector(state => state.projection.currency)
 
     return (
@@ -16,12 +21,14 @@ const Product = ({ name, image1, family, rating, amount }) => {
 
             <span className="self-end mr-2 absolute z-20 top-2 text-white text-[1.2rem]"><BiHeart className="cursor-pointer" /></span>
             <img src={image1} alt={'img'} className=" aspect-[4/4] object-center object-cover" />
-            <div className="px-4 flex flex-col gap-2">
-                <div className="sm:text-sm text-xs flex justify-between">
-                    <p className="">{family}</p>
-                    <span className="flex gap-1"><span className=""><FaStar className="fill-yellow-400" /></span> {rating}</span>
+            <div className="px-4 flex flex-col gap-3">
+                <div className="flex flex-col gap-2 cursor-pointer" onClick={() => {console.log('log');navigate(`/product/${id}`)}}>
+                    <div className="sm:text-sm text-xs flex justify-between">
+                        <p className="">{family}</p>
+                        <span className="flex gap-1"><span className=""><FaStar className="fill-yellow-400" /></span> {rating}</span>
+                    </div>
+                    <h3 className="text-lg font-[600] text-[clamp(1rem,1vh,2rem)]">{name}</h3>
                 </div>
-                <h3 className="text-lg font-[600] text-[clamp(1rem,1vh,2rem)]">{name}</h3>
                 <div className="bg-stone-300 rounded-xl p-1 px-4 flex justify-center items-center gap-2 w-fit self-center">
                     <p className="text-[clamp(.91rem,1vw,1rem)]">{priceInCurrency(amount, currency)}</p>
                     <span className="cursor-pointer"><IoIosAddCircle className=" w-[clamp(1.4rem,1.8vw,2rem)] h-[clamp(1.4rem,1.8vw,2rem)]" /></span>

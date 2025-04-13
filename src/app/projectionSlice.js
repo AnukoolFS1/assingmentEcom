@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const currencySet = new Set(["INR", "USD"])
-const categorySet = new Set(["","TREE", "PLANT", "SEEDS"])
+const categorySet = new Set(["", "TREE", "PLANT", "SEEDS"])
 
 const initialState = { currency: "INR", category: "" }
 
@@ -15,7 +15,6 @@ const projectionSlice = createSlice({
             }
         },
         changeCategory: (state, action) => {
-            console.log('cate')
             if (categorySet.has(action.payload.category)) {
                 state.category = action.payload.category
             }

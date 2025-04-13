@@ -1,4 +1,222 @@
-const set = new Set("INR", "USD")
+let arr = [
+    {
+        "name": "Neem Tree",
+        "imageTree": "https://cdn.pixabay.com/photo/2022/05/10/11/12/tree-7186835_1280.jpg",
+        "imagePlant": "https://cdn.pixabay.com/photo/2020/06/01/15/23/neem-plant-5249022_1280.jpg",
+        "treeFamily": "Meliaceae",
+        "rating": 4.8,
+        "boughts": 1200,
+        "amount": 799,
+        "discount": 15,
+        "age": "TREE",
+        "about": "The Neem tree is renowned for its medicinal properties. It purifies air, repels insects, and is integral to traditional medicine. Its leaves, bark, and seeds offer benefits for skin, immunity, and dental care."
+    },
+    {
+        "name": "Banyan Tree",
+        "imageTree": "https://media.istockphoto.com/id/1019161870/photo/branches-and-hanging-roots-of-giant-banyan-tree-growing-on-famous-pipiwai-trail-on-maui-hawaii.jpg?s=2048x2048&w=is&k=20&c=a-DhOjaJzqBzbnBnhu8XPVe0zzV9ARc7D7GZGQ9ICzg=",
+        "imagePlant": "https://as1.ftcdn.net/v2/jpg/06/25/22/62/1000_F_625226267_UtpuyGD8qLEXglKOYWYzL7vT5YtBhmI8.jpg",
+        "treeFamily": "Moraceae",
+        "rating": 4.9,
+        "boughts": 800,
+        "amount": 1199,
+        "discount": 10,
+        "age": "TREE",
+        "about": "The Banyan tree symbolizes immortality in many cultures. It provides excellent shade, supports biodiversity, and helps prevent soil erosion. A majestic tree often seen in villages and temple areas."
+    },
+    {
+        "name": "Tulsi Plant",
+        "imageTree": "https://as2.ftcdn.net/v2/jpg/10/83/71/23/1000_F_1083712395_1mNF8C1XHETswWdvWGjHYQQ0Bh2imoDQ.jpg",
+        "imagePlant": "https://as1.ftcdn.net/v2/jpg/12/10/95/24/1000_F_1210952410_FvxY3EsTS40bgbiYY4ZgNiKVtKBs6go9.jpg",
+        "treeFamily": "Lamiaceae",
+        "rating": 4.7,
+        "boughts": 2000,
+        "amount": 299,
+        "discount": 25,
+        "age": "PLANT",
+        "about": "Tulsi is a sacred plant in Indian culture, known for its healing properties. It improves immunity, reduces stress, purifies air, and is widely used in teas and herbal remedies."
+    },
+    {
+        "name": "Mango Tree",
+        "imageTree": "https://cdn.pixabay.com/photo/2014/02/27/18/33/mango-tree-276110_1280.jpg",
+        "imagePlant": "https://cdn.pixabay.com/photo/2020/03/10/03/49/tree-4917733_1280.jpg",
+        "treeFamily": "Anacardiaceae",
+        "rating": 4.6,
+        "boughts": 950,
+        "amount": 999,
+        "discount": 20,
+        "age": "TREE",
+        "about": "The Mango tree is cherished for its delicious fruits and dense foliage. It provides shade, supports wildlife, and holds cultural significance in many regions."
+    },
+    {
+        "name": "Peepal Tree",
+        "imageTree": "https://as1.ftcdn.net/v2/jpg/05/09/13/54/1000_F_509135470_dm7yWeZSiK4fgAXZqPpPpSZPg49RWFlP.jpg",
+        "imagePlant": "https://cdn.pixabay.com/photo/2018/05/13/14/48/peepal-3396700_1280.jpg",
+        "treeFamily": "Moraceae",
+        "rating": 4.9,
+        "boughts": 700,
+        "amount": 899,
+        "discount": 18,
+        "age": "TREE",
+        "about": "The Peepal tree is revered in various cultures for its spiritual significance. It releases oxygen even at night, making it unique among trees, and provides shelter to numerous bird species."
+    },
+    {
+        "name": "Gulmohar Tree",
+        "imageTree": "https://media.istockphoto.com/id/491243019/photo/peacock-flower.jpg?s=2048x2048&w=is&k=20&c=NIVcvaqjVs9_OJN_h4OBW94BH4JF8kYfjc-ZB_QdtGw=",
+        "imagePlant": "https://img.freepik.com/free-photo/selective-focus-shot-delonix-royal-with-bokeh-background_181624-30089.jpg?t=st=1744472498~exp=1744476098~hmac=fb58fd509d0cd8dc6722f5d1758f9be2c9eb4e4217d91ea1f203a1bd69b8bfbe&w=1380",
+        "treeFamily": "Fabaceae",
+        "rating": 4.5,
+        "boughts": 650,
+        "amount": 749,
+        "discount": 22,
+        "age": "TREE",
+        "about": "Gulmohar, known for its vibrant red-orange flowers, adds aesthetic value to landscapes. It's a fast-growing tree that offers ample shade and is often planted along roadsides."
+    },
+    {
+        "name": "Ashoka Tree",
+        "imageTree": "https://media.istockphoto.com/id/1321677767/photo/newly-growing-leaves-of-polyalthia-longifolia-or-ashoka-tree-close-up-of-green-color-leaves.jpg?s=2048x2048&w=is&k=20&c=vOsUBRyECGe48rP6t0ixe8ol5zUXJ99dXzJMJXWMNwA=",
+        "imagePlant": "https://media.istockphoto.com/id/1399701810/photo/ashoka-trees-group-of-little-ashoka-trees-with-new-leaves-on-tob-tob-ashoka-tree.jpg?s=2048x2048&w=is&k=20&c=I4E-TMb5Pfbrf-kz-XaRJt2ONQA6ku8yra_xXSR7XUU=",
+        "treeFamily": "Fabaceae",
+        "rating": 4.7,
+        "boughts": 780,
+        "amount": 899,
+        "discount": 17,
+        "age": "TREE",
+        "about": "The Ashoka tree is admired for its elegant appearance and fragrant flowers. It's considered sacred in many traditions and is believed to bring positive energy."
+    },
+    {
+        "name": "Bamboo Plant",
+        "imageTree": "https://media.istockphoto.com/id/931429246/photo/bamboo.jpg?s=2048x2048&w=is&k=20&c=6qme0Qdjg7-bhYrprMwFo4ObTgk26lTwEEhN34moads=",
+        "imagePlant": "https://media.istockphoto.com/id/135634971/photo/bunch-of-lucky-bamboos.jpg?s=2048x2048&w=is&k=20&c=LJwuRxKir7f4azenplOdXdEPqw6gHEUaymLx84kEN5c=",
+        "treeFamily": "Poaceae",
+        "rating": 4.6,
+        "boughts": 1100,
+        "amount": 499,
+        "discount": 20,
+        "age": "PLANT",
+        "about": "Bamboo is a versatile plant known for its rapid growth and sustainability. It's used in construction, crafts, and as a natural air purifier in homes."
+    },
+    {
+        "name": "Aloe Vera Plant",
+        "imageTree": "https://media.istockphoto.com/id/172215238/photo/powerful-aloe-vera.jpg?s=2048x2048&w=is&k=20&c=SRit4Eoiyt0NgKjrYkJnt09JzJfHCmYmwa84vxJGHc4=",
+        "imagePlant": "https://media.istockphoto.com/id/172215238/photo/powerful-aloe-vera.jpg?s=2048x2048&w=is&k=20&c=SRit4Eoiyt0NgKjrYkJnt09JzJfHCmYmwa84vxJGHc4=",
+        "treeFamily": "Asphodelaceae",
+        "rating": 4.8,
+        "boughts": 1600,
+        "amount": 399,
+        "discount": 30,
+        "age": "PLANT",
+        "about": "Aloe Vera is a succulent plant known for its healing properties, especially for skin and hair care. It’s easy to grow, requires minimal maintenance, and purifies the air while being a natural remedy for burns and dryness."
+    },
+    {
+        "name": "Coconut Tree",
+        "imageTree": "https://images.unsplash.com/photo-1553603043-55e1e23fb5be?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "imagePlant": "https://images.unsplash.com/photo-1564792733335-1408c9df6392?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "treeFamily": "Arecaceae",
+        "rating": 4.7,
+        "boughts": 890,
+        "amount": 1299,
+        "discount": 15,
+        "age": "TREE",
+        "about": "The Coconut tree is a multipurpose plant known for its fruit, water, oil, and coir. It thrives in tropical climates and is an essential part of coastal ecosystems and economies."
+    },
+    {
+        "name": "Rose Plant",
+        "imageTree": "https://images.unsplash.com/photo-1601278963628-7b7b7cbdfe96?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "imagePlant": "https://plus.unsplash.com/premium_photo-1675063044882-522a7d281b2f?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "treeFamily": "Rosaceae",
+        "rating": 4.9,
+        "boughts": 2200,
+        "amount": 299,
+        "discount": 35,
+        "age": "PLANT",
+        "about": "Rose plants are iconic for their beauty and fragrance. Often used for decoration and in perfumes, they also symbolize love and elegance. They enhance garden aesthetics significantly."
+    },
+    {
+        "name": "Lemon Tree",
+        "imageTree": "https://plus.unsplash.com/premium_photo-1664115207351-73199c7f4305?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "imagePlant": "https://images.unsplash.com/photo-1575574202227-6b68bd6e3f29?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "treeFamily": "Rutaceae",
+        "rating": 4.6,
+        "boughts": 1050,
+        "amount": 599,
+        "discount": 18,
+        "age": "TREE",
+        "about": "The Lemon tree not only adds citrus delight to your meals but also acts as a natural air freshener. It’s a compact tree suitable for homes and gardens, yielding Vitamin C-rich fruits."
+    },
+    {
+        "name": "Marigold Plant",
+        "imageTree": "https://plus.unsplash.com/premium_photo-1671245156908-61e26926cef9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "imagePlant": "https://plus.unsplash.com/premium_photo-1671245156908-61e26926cef9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "treeFamily": "Asteraceae",
+        "rating": 4.7,
+        "boughts": 1350,
+        "amount": 199,
+        "discount": 28,
+        "age": "PLANT",
+        "about": "Marigold is a bright flowering plant known for its vibrant yellow-orange flowers. It repels pests, is easy to maintain, and is widely used in festivals, rituals, and gardens."
+    },
+    {
+        "name": "Papaya Tree",
+        "imageTree": "https://images.unsplash.com/photo-1664183237682-1987fa120fd2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "imagePlant": "https://images.unsplash.com/photo-1664183237682-1987fa120fd2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "treeFamily": "Caricaceae",
+        "rating": 4.5,
+        "boughts": 780,
+        "amount": 899,
+        "discount": 12,
+        "age": "TREE",
+        "about": "Papaya trees are fruit-bearing plants rich in digestive enzymes like papain. They're fast-growing, easy to cultivate, and offer healthy, sweet fruits with multiple health benefits."
+    },
+    {
+        "name": "Guava Tree",
+        "imageTree": "https://as2.ftcdn.net/v2/jpg/01/19/02/51/1000_F_119025187_1ZbtFEeWsZu8Epyvf9HL6H8UYW9PgHmX.jpg",
+        "imagePlant": "https://as2.ftcdn.net/v2/jpg/01/19/02/51/1000_F_119025187_1ZbtFEeWsZu8Epyvf9HL6H8UYW9PgHmX.jpg",
+        "treeFamily": "Myrtaceae",
+        "rating": 4.6,
+        "boughts": 920,
+        "amount": 799,
+        "discount": 20,
+        "age": "TREE",
+        "about": "The Guava tree is admired for its tasty, nutritious fruits and its ability to grow in various climates. It’s low-maintenance and also acts as a shade provider."
+    },
+    {
+        "name": "Peach Tree",
+        "imageTree": "https://media.istockphoto.com/id/177021819/photo/peach-orchard.jpg?s=1024x1024&w=is&k=20&c=KwIyfcCtixcik_Lz3KYnP4GMgzNk3Y_hj9LJlf9rRho=",
+        "imagePlant": "https://media.istockphoto.com/id/177021819/photo/peach-orchard.jpg?s=1024x1024&w=is&k=20&c=KwIyfcCtixcik_Lz3KYnP4GMgzNk3Y_hj9LJlf9rRho=",
+        "treeFamily": "Rosaceae",
+        "rating": 4.4,
+        "boughts": 690,
+        "amount": 1099,
+        "discount": 15,
+        "age": "TREE",
+        "about": "The Peach tree offers sweet and juicy fruits along with beautiful spring blossoms. It’s ideal for temperate gardens and contributes to a fragrant and fruitful landscape."
+    },
+    {
+        "name": "Pine Tree",
+        "imageTree": "https://images.pexels.com/photos/1012216/pexels-photo-1012216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "imagePlant": "https://images.pexels.com/photos/1012216/pexels-photo-1012216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "treeFamily": "Pinaceae",
+        "rating": 4.7,
+        "boughts": 810,
+        "amount": 1199,
+        "discount": 22,
+        "age": "TREE",
+        "about": "Pine trees are evergreens that contribute to cool climates, reduce soil erosion, and are known for their long needles and cones. They add a fresh scent and are used for wood and resin."
+    },
+    {
+        "name": "Moringa Tree",
+        "imageTree": "https://as2.ftcdn.net/v2/jpg/03/74/44/27/1000_F_374442717_Qg4mjeIjxMvOzr4oVxP4oYRN228kM6ac.jpg",
+        "imagePlant": "https://as2.ftcdn.net/v2/jpg/03/74/44/27/1000_F_374442717_Qg4mjeIjxMvOzr4oVxP4oYRN228kM6ac.jpg",
+        "treeFamily": "Moringaceae",
+        "rating": 4.8,
+        "boughts": 980,
+        "amount": 499,
+        "discount": 20,
+        "age": "TREE",
+        "about": "Moringa, known as the miracle tree, is rich in nutrients and medicinal compounds. Its leaves, pods, and seeds are used for food, water purification, and herbal remedies."
+    }
+]
 
-console.log(set)
-console.log(set.has("INR"))
+for (let x = 0; x < arr.length; x++) {
+    console.log(JSON.stringify({ ...arr[x], id: x }) + ",")
+}

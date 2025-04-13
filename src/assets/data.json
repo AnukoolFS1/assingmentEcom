@@ -9,7 +9,8 @@
         "amount": 799,
         "discount": 15,
         "age": "TREE",
-        "about": "The Neem tree is renowned for its medicinal properties. It purifies air, repels insects, and is integral to traditional medicine. Its leaves, bark, and seeds offer benefits for skin, immunity, and dental care."
+        "about": "The Neem tree is renowned for its medicinal properties. It purifies air, repels insects, and is integral to traditional medicine. Its leaves, bark, and seeds offer benefits for skin, immunity, and dental care.",
+        "id": 0
     },
     {
         "name": "Banyan Tree",
@@ -21,7 +22,8 @@
         "amount": 1199,
         "discount": 10,
         "age": "TREE",
-        "about": "The Banyan tree symbolizes immortality in many cultures. It provides excellent shade, supports biodiversity, and helps prevent soil erosion. A majestic tree often seen in villages and temple areas."
+        "about": "The Banyan tree symbolizes immortality in many cultures. It provides excellent shade, supports biodiversity, and helps prevent soil erosion. A majestic tree often seen in villages and temple areas.",
+        "id": 1
     },
     {
         "name": "Tulsi Plant",
@@ -33,7 +35,8 @@
         "amount": 299,
         "discount": 25,
         "age": "PLANT",
-        "about": "Tulsi is a sacred plant in Indian culture, known for its healing properties. It improves immunity, reduces stress, purifies air, and is widely used in teas and herbal remedies."
+        "about": "Tulsi is a sacred plant in Indian culture, known for its healing properties. It improves immunity, reduces stress, purifies air, and is widely used in teas and herbal remedies.",
+        "id": 2
     },
     {
         "name": "Mango Tree",
@@ -45,7 +48,8 @@
         "amount": 999,
         "discount": 20,
         "age": "TREE",
-        "about": "The Mango tree is cherished for its delicious fruits and dense foliage. It provides shade, supports wildlife, and holds cultural significance in many regions."
+        "about": "The Mango tree is cherished for its delicious fruits and dense foliage. It provides shade, supports wildlife, and holds cultural significance in many regions.",
+        "id": 3
     },
     {
         "name": "Peepal Tree",
@@ -57,7 +61,8 @@
         "amount": 899,
         "discount": 18,
         "age": "TREE",
-        "about": "The Peepal tree is revered in various cultures for its spiritual significance. It releases oxygen even at night, making it unique among trees, and provides shelter to numerous bird species."
+        "about": "The Peepal tree is revered in various cultures for its spiritual significance. It releases oxygen even at night, making it unique among trees, and provides shelter to numerous bird species.",
+        "id": 4
     },
     {
         "name": "Gulmohar Tree",
@@ -69,7 +74,8 @@
         "amount": 749,
         "discount": 22,
         "age": "TREE",
-        "about": "Gulmohar, known for its vibrant red-orange flowers, adds aesthetic value to landscapes. It's a fast-growing tree that offers ample shade and is often planted along roadsides."
+        "about": "Gulmohar, known for its vibrant red-orange flowers, adds aesthetic value to landscapes. It's a fast-growing tree that offers ample shade and is often planted along roadsides.",
+        "id": 5
     },
     {
         "name": "Ashoka Tree",
@@ -81,7 +87,8 @@
         "amount": 899,
         "discount": 17,
         "age": "TREE",
-        "about": "The Ashoka tree is admired for its elegant appearance and fragrant flowers. It's considered sacred in many traditions and is believed to bring positive energy."
+        "about": "The Ashoka tree is admired for its elegant appearance and fragrant flowers. It's considered sacred in many traditions and is believed to bring positive energy.",
+        "id": 6
     },
     {
         "name": "Bamboo Plant",
@@ -93,7 +100,8 @@
         "amount": 499,
         "discount": 20,
         "age": "PLANT",
-        "about": "Bamboo is a versatile plant known for its rapid growth and sustainability. It's used in construction, crafts, and as a natural air purifier in homes."
+        "about": "Bamboo is a versatile plant known for its rapid growth and sustainability. It's used in construction, crafts, and as a natural air purifier in homes.",
+        "id": 7
     },
     {
         "name": "Aloe Vera Plant",
@@ -105,7 +113,8 @@
         "amount": 399,
         "discount": 30,
         "age": "PLANT",
-        "about": "Aloe Vera is a succulent plant known for its healing properties, especially for skin and hair care. It’s easy to grow, requires minimal maintenance, and purifies the air while being a natural remedy for burns and dryness."
+        "about": "Aloe Vera is a succulent plant known for its healing properties, especially for skin and hair care. It’s easy to grow, requires minimal maintenance, and purifies the air while being a natural remedy for burns and dryness.",
+        "id": 8
     },
     {
         "name": "Coconut Tree",
@@ -117,7 +126,8 @@
         "amount": 1299,
         "discount": 15,
         "age": "TREE",
-        "about": "The Coconut tree is a multipurpose plant known for its fruit, water, oil, and coir. It thrives in tropical climates and is an essential part of coastal ecosystems and economies."
+        "about": "The Coconut tree is a multipurpose plant known for its fruit, water, oil, and coir. It thrives in tropical climates and is an essential part of coastal ecosystems and economies.",
+        "id": 9
     },
     {
         "name": "Rose Plant",
@@ -129,7 +139,8 @@
         "amount": 299,
         "discount": 35,
         "age": "PLANT",
-        "about": "Rose plants are iconic for their beauty and fragrance. Often used for decoration and in perfumes, they also symbolize love and elegance. They enhance garden aesthetics significantly."
+        "about": "Rose plants are iconic for their beauty and fragrance. Often used for decoration and in perfumes, they also symbolize love and elegance. They enhance garden aesthetics significantly.",
+        "id": 10
     },
     {
         "name": "Lemon Tree",
@@ -141,7 +152,8 @@
         "amount": 599,
         "discount": 18,
         "age": "TREE",
-        "about": "The Lemon tree not only adds citrus delight to your meals but also acts as a natural air freshener. It’s a compact tree suitable for homes and gardens, yielding Vitamin C-rich fruits."
+        "about": "The Lemon tree not only adds citrus delight to your meals but also acts as a natural air freshener. It’s a compact tree suitable for homes and gardens, yielding Vitamin C-rich fruits.",
+        "id": 11
     },
     {
         "name": "Marigold Plant",
@@ -153,7 +165,8 @@
         "amount": 199,
         "discount": 28,
         "age": "PLANT",
-        "about": "Marigold is a bright flowering plant known for its vibrant yellow-orange flowers. It repels pests, is easy to maintain, and is widely used in festivals, rituals, and gardens."
+        "about": "Marigold is a bright flowering plant known for its vibrant yellow-orange flowers. It repels pests, is easy to maintain, and is widely used in festivals, rituals, and gardens.",
+        "id": 12
     },
     {
         "name": "Papaya Tree",
@@ -165,7 +178,8 @@
         "amount": 899,
         "discount": 12,
         "age": "TREE",
-        "about": "Papaya trees are fruit-bearing plants rich in digestive enzymes like papain. They're fast-growing, easy to cultivate, and offer healthy, sweet fruits with multiple health benefits."
+        "about": "Papaya trees are fruit-bearing plants rich in digestive enzymes like papain. They're fast-growing, easy to cultivate, and offer healthy, sweet fruits with multiple health benefits.",
+        "id": 13
     },
     {
         "name": "Guava Tree",
@@ -177,7 +191,8 @@
         "amount": 799,
         "discount": 20,
         "age": "TREE",
-        "about": "The Guava tree is admired for its tasty, nutritious fruits and its ability to grow in various climates. It’s low-maintenance and also acts as a shade provider."
+        "about": "The Guava tree is admired for its tasty, nutritious fruits and its ability to grow in various climates. It’s low-maintenance and also acts as a shade provider.",
+        "id": 14
     },
     {
         "name": "Peach Tree",
@@ -189,7 +204,8 @@
         "amount": 1099,
         "discount": 15,
         "age": "TREE",
-        "about": "The Peach tree offers sweet and juicy fruits along with beautiful spring blossoms. It’s ideal for temperate gardens and contributes to a fragrant and fruitful landscape."
+        "about": "The Peach tree offers sweet and juicy fruits along with beautiful spring blossoms. It’s ideal for temperate gardens and contributes to a fragrant and fruitful landscape.",
+        "id": 15
     },
     {
         "name": "Pine Tree",
@@ -201,7 +217,8 @@
         "amount": 1199,
         "discount": 22,
         "age": "TREE",
-        "about": "Pine trees are evergreens that contribute to cool climates, reduce soil erosion, and are known for their long needles and cones. They add a fresh scent and are used for wood and resin."
+        "about": "Pine trees are evergreens that contribute to cool climates, reduce soil erosion, and are known for their long needles and cones. They add a fresh scent and are used for wood and resin.",
+        "id": 16
     },
     {
         "name": "Moringa Tree",
@@ -213,6 +230,7 @@
         "amount": 499,
         "discount": 20,
         "age": "TREE",
-        "about": "Moringa, known as the miracle tree, is rich in nutrients and medicinal compounds. Its leaves, pods, and seeds are used for food, water purification, and herbal remedies."
+        "about": "Moringa, known as the miracle tree, is rich in nutrients and medicinal compounds. Its leaves, pods, and seeds are used for food, water purification, and herbal remedies.",
+        "id": 17
     }
 ]

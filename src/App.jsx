@@ -5,6 +5,7 @@ import store from "./app/store"
 //Component
 import Entrypoint from "./component/Pages/Entrypoint"
 import Dashboard from "./component/Pages/Dashboard"
+import ProductPage from "./component/Pages/ProductPage"
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Entrypoint />} />
           <Route path="/products" element={<Dashboard />} />
+          <Route path="/product/*" element={<ProductPage />} />
         </Routes>
       </Router>
      </Provider>

@@ -35,6 +35,7 @@ const Products = () => {
                             family={product.treeFamily}
                             rating={product.rating}
                             amount={product.amount}
+                            id={product.id}
                         />
                     )
                 })
