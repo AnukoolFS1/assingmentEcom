@@ -9,13 +9,19 @@
   animation: text-insert .35s linear 1 forwards;
 }
 
+.customscroller {
+  scrollbar-width: none;         /* Firefox */
+  -ms-overflow-style: none;
+}
+
 .customscroller::-webkit-scrollbar {
   display: none;
   height: 0px;
 }
 
-article.customscroller::-webkit-scrollbar{
- display: none;
+
+article.customscroller::-webkit-scrollbar {
+  display: none;
 }
 
 @keyframes text-insert {
