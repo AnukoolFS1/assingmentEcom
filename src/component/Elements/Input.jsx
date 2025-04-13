@@ -8,7 +8,7 @@ const Input = ({ type, value, placeholder, getValue, inputStyle, containerStyle 
     }
 
     return (
-        <div className={`${containerStyle || "flex items-center gap-2 border border-stone-300 rounded-2xl p-1 px-2 bg-stone-200"}`}>
+        <div className={`${containerStyle + " flex flex-row items-center gap-2 rounded-2xl p-1 px-2 bg-stone-200"}`}>
             <span>
                 <CiSearch />
             </span>

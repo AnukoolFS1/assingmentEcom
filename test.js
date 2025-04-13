@@ -1,1 +1,4 @@
-console.log("string".slice(1))
+const set = new Set("INR", "USD")
+
+console.log(set)
+console.log(set.has("INR"))

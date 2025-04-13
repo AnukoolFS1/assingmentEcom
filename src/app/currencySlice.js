@@ -1,14 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const currencySet = new Set("INR", "USD")
+const currencySet = new Set(["INR", "USD"])
 
 const initialState = { currency: "INR" }
 
 const currencySlice = createSlice({
-    name: "Currency",
+    name: "currency",
     initialState,
     reducers: {
-        setCurrency: (state, action) => {
+        changeCurrency: (state, action) => {
+            console.log(action.payload.currency)
+            console.log(currencySet.has(action.payload.currency))
             if (currencySet.has(action.payload.currency)) {
                 state.currency = action.payload.currency
             }
@@ -16,5 +18,5 @@ const currencySlice = createSlice({
     }
 })
 
-export const { setCurrency } = currencySlice.actions
+export const { changeCurrency } = currencySlice.actions
 export default currencySlice.reducer

@@ -3,13 +3,14 @@ const currenyObj = {
     "USD": 1
 }
 
-const symbol = {
+const currencySymbol = {
     "INR": "₹",
     "USD": "$"
 }
 
 function priceInCurrency(amount, currency) {
-    return `${symbol[currency]} ${amount*currenyObj[currency]}/-`
+    return `${currencySymbol[currency]} ${amount * currenyObj[currency]}/-`
 }
 
+export { currencySymbol }
 export default priceInCurrency
