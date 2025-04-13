@@ -9,7 +9,7 @@ const Categories = () => {
     return (
         <section className=" flex flex-col gap-2">
             <h3 className="font-[700] text-stone-100">Categories</h3>
-            <div className="flex gap-[clamp(2px,3vw,40px)] items-center pl-2">
+            <div className="flex gap-[clamp(2px,3vw,40px)] items-center pl-2 overflow-x-scroll customscroller">
 
                 {
                     categories.map(e => {
@@ -22,7 +22,10 @@ const Categories = () => {
                         )
                     })
                 }
-                <div className="cursor-pointer text-stone-100" onClick={() => setCategory("")}><span><BiXCircle className="w-[20px] h-[20px]" /></span></div>
+                {
+                    category &&
+                    <div className="cursor-pointer text-stone-100  p-1 px-3 flex items-center gap-1 border rounded-lg" onClick={() => setCategory("")}>Clear <BiXCircle /></div>
+                }
             </div>
         </section>
     )

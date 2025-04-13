@@ -11,7 +11,11 @@
 
 .customscroller::-webkit-scrollbar {
   display: none;
-  
+  height: 0px;
+}
+
+article.customscroller::-webkit-scrollbar{
+ display: none;
 }
 
 @keyframes text-insert {
@@ -24,4 +28,14 @@
     opacity: 1;
     transform: translateY(0px)
   }
+}
+
+.clip-filter {
+  background-color: yellow;
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* for better browser support */
+  /* color: transparent; */
+  /* backdrop-filter: blur(5px); */
+
 }
