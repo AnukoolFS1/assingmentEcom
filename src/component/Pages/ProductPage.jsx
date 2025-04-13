@@ -65,7 +65,7 @@ const ProductPage = () => {
                 <article className="">
                     <FreshOffer />
                 </article>
-                <article className="px-10">
+                <article className="sm:px-10 px-1">
                     <h3 className="mx-4 mb-4 font-[700]">Recommend For You</h3>
                     <Products
                         style={`px-0 mx-auto xl:w-[91%] grid grid-cols-2 sm:grid-cols-2 gap-2 sm:gap-6 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5`}
