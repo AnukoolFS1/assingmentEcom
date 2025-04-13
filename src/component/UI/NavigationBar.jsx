@@ -13,15 +13,15 @@ const NavigationBar = () => {
 
     return (
         <nav className="bg-neutral-400 fixed w-full left-0 flex justify-center bottom-0 z-50">
-            <ul className="flex">
+            <ul className="flex gap-2">
                 {
                     navs.map(e => {
 
                         return (
                             <li key={e.title} title={e.title}
-                            className="p-4 md:px-6 md:py-[6px] flex flex-col items-center justify-between"
+                            className="p-4 md:px-6 md:py-[6px] flex flex-col items-center justify-between hover:bg-blue-900 hover:text-white "
                             >
-                                <span className=" text-emerald-700 hover:bg-">{e.icon}</span>
+                                <span className=" text-blue-700 ">{e.icon}</span>
                                 <p className="hidden md:block">{e.title}</p>
                             </li>
                         )

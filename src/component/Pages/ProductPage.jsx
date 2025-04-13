@@ -9,6 +9,7 @@ import Header from "../UI/Header";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { IoMdArrowBack } from "react-icons/io";
 import Products from "../UI/Products";
+import NavigationBar from "../UI/NavigationBar";
 
 
 
@@ -71,6 +72,7 @@ const ProductPage = () => {
                     />
                 </article>
             </section>
+            <NavigationBar />
         </section>
     )
 }
