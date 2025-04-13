@@ -13,7 +13,7 @@ const Input = ({ type, value, placeholder, getValue, inputStyle, containerStyle 
                 <CiSearch />
             </span>
             <input
-                className={`${inputStyle} w-full border-none outline-none shrink-1`}
+                className={`${inputStyle} w-full border-none outline-none shrink-1 py-1`}
                 type={type}
                 value={value}
                 placeholder={placeholder}

@@ -13,7 +13,7 @@ const Header = () => {
             <h2 className="text-[clamp(20px,2vw,50px)] text-stone-100">
                 Welcome back, User
             </h2>
-            <div className="shrink-1 overflow-hidden">
+            <div className="shrink-1 overflow-hidden w-[clamp(150px,30vw,400px)]">
                 <Input
                     inputStyle={"text-stone-800"}
                     containerStyle={""}

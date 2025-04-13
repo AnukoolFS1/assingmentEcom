@@ -13,8 +13,8 @@
     },
     {
         "name": "Banyan Tree",
-        "imageTree": "https://cdn.pixabay.com/photo/2015/03/26/09/54/banyan-tree-690084_1280.jpg",
-        "imagePlant": "https://cdn.pixabay.com/photo/2020/06/01/15/23/banyan-plant-5249023_1280.jpg",
+        "imageTree": "https://media.istockphoto.com/id/1019161870/photo/branches-and-hanging-roots-of-giant-banyan-tree-growing-on-famous-pipiwai-trail-on-maui-hawaii.jpg?s=2048x2048&w=is&k=20&c=a-DhOjaJzqBzbnBnhu8XPVe0zzV9ARc7D7GZGQ9ICzg=",
+        "imagePlant": "https://as1.ftcdn.net/v2/jpg/06/25/22/62/1000_F_625226267_UtpuyGD8qLEXglKOYWYzL7vT5YtBhmI8.jpg",
         "treeFamily": "Moraceae",
         "rating": 4.9,
         "boughts": 800,
@@ -24,9 +24,9 @@
         "about": "The Banyan tree symbolizes immortality in many cultures. It provides excellent shade, supports biodiversity, and helps prevent soil erosion. A majestic tree often seen in villages and temple areas."
     },
     {
-        "name": "Tulsi Plant (Holy Basil)",
-        "imageTree": "https://cdn.pixabay.com/photo/2018/06/21/15/49/tulsi-3483173_1280.jpg",
-        "imagePlant": "https://cdn.pixabay.com/photo/2018/06/21/15/49/tulsi-plant-3483174_1280.jpg",
+        "name": "Tulsi Plant",
+        "imageTree": "https://as2.ftcdn.net/v2/jpg/10/83/71/23/1000_F_1083712395_1mNF8C1XHETswWdvWGjHYQQ0Bh2imoDQ.jpg",
+        "imagePlant": "https://as1.ftcdn.net/v2/jpg/12/10/95/24/1000_F_1210952410_FvxY3EsTS40bgbiYY4ZgNiKVtKBs6go9.jpg",
         "treeFamily": "Lamiaceae",
         "rating": 4.7,
         "boughts": 2000,
@@ -204,7 +204,7 @@
         "about": "Pine trees are evergreens that contribute to cool climates, reduce soil erosion, and are known for their long needles and cones. They add a fresh scent and are used for wood and resin."
     },
     {
-        "name": "Moringa Tree (Drumstick)",
+        "name": "Moringa Tree",
         "imageTree": "https://as2.ftcdn.net/v2/jpg/03/74/44/27/1000_F_374442717_Qg4mjeIjxMvOzr4oVxP4oYRN228kM6ac.jpg",
         "imagePlant": "https://as2.ftcdn.net/v2/jpg/03/74/44/27/1000_F_374442717_Qg4mjeIjxMvOzr4oVxP4oYRN228kM6ac.jpg",
         "treeFamily": "Moringaceae",

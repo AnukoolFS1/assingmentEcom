@@ -3,17 +3,23 @@ import Product from './Product'
 
 const Products = () => {
 
-    const product = products[0]
     return (
-        <section>
-            <Product
-                name={product.name}
-                image1={product.imageTree}
-                // image2={product.imagePlant}
-                family={product.treeFamily}
-                rating={product.rating}
-                amount={product.amount}
-            />
+        <section className='px-0 mx-auto xl:w-[91%] flex gap-2 sm:gap-10 items-center xl:justify-start justify-center flex-wrap md:flex-row'>
+            {
+                products.map((product, i) => {
+                    return (
+                        <Product
+                            key={product.name + i}
+                            name={product.name}
+                            image1={product.imageTree}
+                            family={product.treeFamily}
+                            rating={product.rating}
+                            amount={product.amount}
+                        />
+                    )
+                })
+            }
+
         </section>
     )
 }
