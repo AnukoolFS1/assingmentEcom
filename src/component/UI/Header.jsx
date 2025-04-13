@@ -10,10 +10,10 @@ const Header = () => {
 
     return (
         <header className="font-semibold flex items-center justify-between">
-            <h2 className="text-[clamp(20px,2vw,50px)]">
+            <h2 className="text-[clamp(20px,2vw,50px)] text-stone-100">
                 Welcome back, User
             </h2>
-            <div>
+            <div className="shrink-1 overflow-hidden">
                 <Input
                     inputStyle={"text-stone-800"}
                     containerStyle={""}
