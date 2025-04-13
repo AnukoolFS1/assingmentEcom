@@ -29,14 +29,14 @@ const ProductPage = () => {
 
 
     return (
-        <section className="py-6">
-            <button onClick={() => navigate(-1)} className="cursor-pointer absolute text-[24px] top-4 left-6"><IoMdArrowBack /></button>
+        <section className="py-12">
+            <button onClick={() => navigate(-1)} className="cursor-pointer absolute text-[24px] top-7 left-6"><IoMdArrowBack /></button>
             {/* <Header /> */}
             <section className="flex flex-col  py-20 pt-10 gap-10">
                 <article className="flex gap-10 px-1 sm:px-10 flex-col items-center md:flex-row">
                     <article className="grow-1 md:w-[70%] ">
                         <img src={image1} alt=""
-                            className="w-full h-[clamp(10rem,70vw,50rem)] object-contain object-top"
+                            className="w-full md: object-contain object-top"
                         />
                     </article>
                     <article className="flex md:w-[50%]  flex-col gap-4 justify-center px-4">
@@ -67,7 +67,7 @@ const ProductPage = () => {
                 <article className="">
                     <h3 className="mx-4 mb-4 font-[700]">Recommend For You</h3>
                     <Products
-                        style={`px-0 mx-auto xl:w-[91%] flex gap-2 sm:gap-10 items-center xl:justify-start justify-center flex-wrap md:flex-row`}
+                        style={`px-0 mx-auto xl:w-[95%] flex gap-2 sm:gap-10 items-center xl:justify-start justify-center flex-wrap md:flex-row`}
                     />
                 </article>
             </section>
