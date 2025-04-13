@@ -19,7 +19,7 @@ const Header = () => {
 
     return (
         <header className="font-semibold flex items-center justify-between pr-2">
-            <h2 className="text-[clamp(20px,2vw,50px)] text-stone-100">
+            <h2 className="text-[clamp(20px,2vw,50px)] text-stone-800">
                 Welcome back, User
             </h2>
             <div className="shrink-1 overflow-hidden w-[clamp(150px,30vw,400px)] flex gap-3">

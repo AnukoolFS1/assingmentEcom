@@ -9,7 +9,7 @@ const currencySymbol = {
 }
 
 function priceInCurrency(amount, currency) {
-    return `${currencySymbol[currency]} ${amount * currenyObj[currency]}/-`
+    return `${currencySymbol[currency]} ${(amount * currenyObj[currency]).toFixed(2)}/-`
 }
 
 export { currencySymbol }

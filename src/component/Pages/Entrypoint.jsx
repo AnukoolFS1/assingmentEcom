@@ -6,7 +6,7 @@ const Entrypoint = () => {
     const backgroundImage = 'https://images.pexels.com/photos/30081518/pexels-photo-30081518/free-photo-of-serene-greenhouse-with-lush-botanical-pathway.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
 
     return (
-        <section className="h-screen w-screen p-5 bg-green-500">
+        <section className="h-screen w-screen p-5 bg-zinc-200">
 
             <section
                 className="h-full py-10 lg:px-20 sm:px-10 px-2 custom-bg text-[white] rounded-xl flex flex-col justify-between items-center"

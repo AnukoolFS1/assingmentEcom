@@ -14,11 +14,11 @@ const ProductCard = ({ name, image1, image2, family, rating, amount, id, about, 
     const navigate = useNavigate()
     const currency = useSelector(state => state.projection.currency)
     const dispatch = useDispatch()
-
+    const product = { name, image1, image2, family, rating, amount, id, about, discount, boughts, age }
 
     function updateProduct() {
-        dispatch(changeCurrentProduct({ name, image1, image2, family, rating, amount, id, about, discount, boughts, age }))
-        navigate(`/product/${id}`)
+        dispatch(changeCurrentProduct({ product }))
+        navigate(`/product/${id + 1}-${name}`)
     }
 
     return (
