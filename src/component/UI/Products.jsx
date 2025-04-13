@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux'
 import products from '../../assets/data.json'
 import seeds from "../../assets/seeds.json"
-import Product from './Product'
+import ProductCard from './ProductCard'
 
 const Products = () => {
     const category = useSelector(state => state.projection.category)
@@ -28,14 +28,19 @@ const Products = () => {
             {
                 renderArray.map((product, i) => {
                     return (
-                        <Product
+                        <ProductCard
                             key={product.name + i}
+                            id={product.id}
                             name={product.name}
                             image1={product.imageTree}
+                            image2={product.imagePlant}
                             family={product.treeFamily}
                             rating={product.rating}
                             amount={product.amount}
-                            id={product.id}
+                            discount={product.discount}
+                            age={product.age}
+                            about={product.about}
+                            boughts={product.boughts}
                         />
                     )
                 })

@@ -1,17 +1,25 @@
 // library
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 // icons
 import { BiHeart } from "react-icons/bi";
-import { FaStar } from "react-icons/fa6";
+import { FaMixcloud, FaStar } from "react-icons/fa6";
 import { IoIosAddCircle } from "react-icons/io";
 // self module
 import priceInCurrency from "../../app/currency";
+import { changeCurrentProduct } from "../../app/currentProduct";
 
 
-const Product = ({ name, image1, family, rating, amount, id }) => {
+const ProductCard = ({ name, image1, image2, family, rating, amount, id, about, discount, boughts, age }) => {
     const navigate = useNavigate()
     const currency = useSelector(state => state.projection.currency)
+    const dispatch = useDispatch()
+
+
+    function updateProduct() {
+        dispatch(changeCurrentProduct({ name, image1, image2, family, rating, amount, id, about, discount, boughts, age }))
+        navigate(`/product/${id}`)
+    }
 
     return (
         <article
@@ -22,7 +30,7 @@ const Product = ({ name, image1, family, rating, amount, id }) => {
             <span className="self-end mr-2 absolute z-20 top-2 text-white text-[1.2rem]"><BiHeart className="cursor-pointer" /></span>
             <img src={image1} alt={'img'} className=" aspect-[4/4] object-center object-cover" />
             <div className="px-4 flex flex-col gap-3">
-                <div className="flex flex-col gap-2 cursor-pointer" onClick={() => {console.log('log');navigate(`/product/${id}`)}}>
+                <div className="flex flex-col gap-2 cursor-pointer" onClick={() => updateProduct({})}>
                     <div className="sm:text-sm text-xs flex justify-between">
                         <p className="">{family}</p>
                         <span className="flex gap-1"><span className=""><FaStar className="fill-yellow-400" /></span> {rating}</span>
@@ -38,4 +46,4 @@ const Product = ({ name, image1, family, rating, amount, id }) => {
     )
 }
 
-export default Product
+export default ProductCard

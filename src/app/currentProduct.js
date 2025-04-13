@@ -1,17 +1,19 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    "name": "",
-    "imageTree": "",
-    "imagePlant": "",
-    "treeFamily": "",
-    "rating": NaN,
-    "boughts": NaN,
-    "amount": NaN,
-    "discount": NaN,
-    "age": "",
-    "about": "",
-    "id": NaN
+    product: {
+        "name": "",
+        "imageTree": "",
+        "imagePlant": "",
+        "treeFamily": "",
+        "rating": NaN,
+        "boughts": NaN,
+        "amount": NaN,
+        "discount": NaN,
+        "age": "",
+        "about": "",
+        "id": NaN
+    }
 }
 
 const currentProduct = createSlice({
@@ -19,9 +21,7 @@ const currentProduct = createSlice({
     initialState,
     reducers: {
         changeCurrentProduct: (state, action) => {
-            if (currencySet.has(action.payload.currency)) {
-                state.currency = action.payload.currency
-            }
+            state.product = action.payload.product
         }
     }
 })

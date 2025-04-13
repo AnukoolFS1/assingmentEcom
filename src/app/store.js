@@ -1,4 +1,6 @@
+// toolkit
 import { configureStore } from "@reduxjs/toolkit";
+// Reducers
 import currencyReducers from './projectionSlice';
 import currentProductReducer from "./currentProduct"
 
