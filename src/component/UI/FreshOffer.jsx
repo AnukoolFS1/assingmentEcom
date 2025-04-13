@@ -5,12 +5,13 @@ const FreshOffer = () => {
     // console.log(freshProducts)
 
     return (
-        <section className="border p-2 flex">
+        <section className="p-2 flex overflow-x-scroll gap-10 customscroller">
             {
                 freshProducts?.map((product, index) => {
                     return (
                         <FreshProduct
                             key={product.name + index}
+                            index={index}
                             name={product.name}
                             image={product.imageTree}
                             family={product.treeFamily}

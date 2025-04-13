@@ -9,6 +9,11 @@
   animation: text-insert .35s linear 1 forwards;
 }
 
+.customscroller::-webkit-scrollbar {
+  display: none;
+  
+}
+
 @keyframes text-insert {
   from {
     opacity: .3;
