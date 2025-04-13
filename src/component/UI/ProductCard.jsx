@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 // icons
 import { BiHeart } from "react-icons/bi";
-import { FaMixcloud, FaStar } from "react-icons/fa6";
+import {  FaStar } from "react-icons/fa6";
 import { IoIosAddCircle } from "react-icons/io";
 // self module
 import priceInCurrency from "../../app/currency";

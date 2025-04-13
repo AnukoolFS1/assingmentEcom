@@ -3,7 +3,7 @@ import products from '../../assets/data.json'
 import seeds from "../../assets/seeds.json"
 import ProductCard from './ProductCard'
 
-const Products = () => {
+const Products = ({ style }) => {
     const category = useSelector(state => state.projection.category)
 
     let renderArray = products;
@@ -24,7 +24,7 @@ const Products = () => {
     }
 
     return (
-        <section className='px-0 mx-auto xl:w-[91%] flex gap-2 sm:gap-10 items-center xl:justify-start justify-center flex-wrap md:flex-row'>
+        <section className={`${style || "px-0 mx-auto xl:w-[91%] flex gap-2 sm:gap-10 items-center xl:justify-start justify-center flex-wrap md:flex-row"}`}>
             {
                 renderArray.map((product, i) => {
                     return (
