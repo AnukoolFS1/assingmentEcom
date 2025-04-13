@@ -64,10 +64,10 @@ const ProductPage = () => {
                 <article className="">
                     <FreshOffer />
                 </article>
-                <article className="">
+                <article className="px-10">
                     <h3 className="mx-4 mb-4 font-[700]">Recommend For You</h3>
                     <Products
-                        style={`px-0 mx-auto xl:w-[95%] flex gap-2 sm:gap-10 items-center xl:justify-start justify-center flex-wrap md:flex-row`}
+                        style={`px-0 mx-auto xl:w-[91%] grid grid-cols-2 sm:grid-cols-2 gap-2 sm:gap-6 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5`}
                     />
                 </article>
             </section>

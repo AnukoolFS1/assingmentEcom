@@ -12,7 +12,7 @@ const Dashboard = () => {
             <FreshOffer />
             <Categories />
             <Products
-                style={"px-0 mx-auto xl:w-[91%] flex gap-2 sm:gap-10 items-center xl:justify-start justify-center flex-wrap md:flex-row"}
+                style={"px-0 mx-auto xl:w-[91%] grid grid-cols-2 sm:grid-cols-2 gap-2 sm:gap-6 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"}
             />
             <NavigationBar />
         </section>
