@@ -1,6 +1,7 @@
 import Categories from "../UI/Categories"
 import FreshOffer from "../UI/FreshOffer"
 import Header from "../UI/Header"
+import Products from "../UI/Products"
 
 const Dashboard = () => {
 
@@ -9,6 +10,7 @@ const Dashboard = () => {
             <Header />
             <FreshOffer />
             <Categories />
+            <Products />
         </section>
     )
 }
