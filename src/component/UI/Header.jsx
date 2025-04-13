@@ -2,19 +2,18 @@ import { useState } from "react"
 import Input from "../Elements/Input"
 import { useDispatch, useSelector } from "react-redux";
 import { currencySymbol } from "../../app/currency";
-import { changeCurrency } from "../../app/currencySlice";
+import { changeCurrency } from "../../app/projectionSlice";
 
 const Header = () => {
     const [searchValue, setSearchValue] = useState("");
     const dispatch = useDispatch()
-    const currency = useSelector(state => state.currency.currency)
+    const currency = useSelector(state => state.projection.currency)
 
     const getValue = (value) => {
         setSearchValue(value)
     }
 
     const setCurrency = () => {
-        console.log("wqer")
         dispatch(changeCurrency({ currency: currency === "INR" ? "USD" : "INR" }))
     }
 

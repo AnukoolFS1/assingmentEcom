@@ -3,7 +3,6 @@ import { CiSearch } from "react-icons/ci";
 const Input = ({ type, value, placeholder, getValue, inputStyle, containerStyle }) => {
     function passValue(e) {
         const value = e.target.value;
-        console.log(value)
         getValue(value)
     }
 

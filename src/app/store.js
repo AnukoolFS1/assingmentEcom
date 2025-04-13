@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import currencyReducers from './currencySlice'
+import currencyReducers from './projectionSlice'
 const store = configureStore({
     reducer: {
-        currency: currencyReducers
+        projection: currencyReducers
     }
 })
 

@@ -6,7 +6,7 @@ import priceInCurrency from "../../app/currency";
 
 
 const Product = ({ name, image1, family, rating, amount }) => {
-    const currency = useSelector(state => state.currency.currency)
+    const currency = useSelector(state => state.projection.currency)
 
     return (
         <article

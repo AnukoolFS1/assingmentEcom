@@ -1,16 +1,21 @@
 import { useState } from "react"
 import { capitalize } from "../../app/capitalize"
 import { BiXCircle } from "react-icons/bi"
+import { useDispatch, useSelector } from "react-redux"
+import { changeCategory } from "../../app/projectionSlice"
 
 const Categories = () => {
-    const categories = ["TREES", "PLANTS", "SEEDS"]
-    const [category, setCategory] = useState("")
+    const categories = ["TREE", "PLANT", "SEEDS"]
+    const dispatch = useDispatch()
+    const category = useSelector(state => state.projection.category)
 
+    const setCategory = (e) => {
+        dispatch(changeCategory({category: e}))
+    }
     return (
         <section className=" flex flex-col gap-2">
             <h3 className="font-[700] text-stone-100">Categories</h3>
             <div className="flex gap-[clamp(2px,3vw,40px)] items-center pl-2 overflow-x-scroll customscroller">
-
                 {
                     categories.map(e => {
                         return (
